@@ -12,86 +12,24 @@ html(lang="de")
     .wrapper
       h1 Einführung in das CMS Wordpress
       p nachdem du das 
-        a(href="https://fabianwidukindpenzkofer.de/wp-admin") Dashboard
+        a(href="https://gaia.local/wp-admin") Dashboard
         |  betreten hast, und deinen Username und Passwort eingegeben hast, kannst du folgendes tun:
       ul
         li Werke erstellen 
-          a(href="#werke") 1.1 <i class="fas fa-arrow-right"></i>
+          a(href="#one") 1.1 <i class="fas fa-arrow-right"></i>
         li Events für die Startseite "Jetzt" erstellen 
-          a(href="#events") 2.1 <i class="fas fa-arrow-right"></i>
+          a(href="#two") 2.1 <i class="fas fa-arrow-right"></i>
         li Vitaeinträge für die vergangenen Veranstaltungen erstellen 
-          a(href="#vita") 3.1 <i class="fas fa-arrow-right"></i>
-      em diese 3 Elemente sind Orange unterlegt <span class="orange"> like this </span>
-      ul
+          a(href="#three") 3.1 <i class="fas fa-arrow-right"></i>
         li viele andere Sachen 
-          a(href="#extras") 4.1 <i class="fas fa-arrow-right"></i>
+          a(href="#four") 4.1 <i class="fas fa-arrow-right"></i>
+      em Zusatzanmerkung
       h2 1.1 Ein neues Werk erstellen:
-      ol#werke
-        li Klicke Schaltfläche <span class="accent">Werke</span>
-        li Klicke Schaltfläche <span class="accent">Add Werke</span>
-        em Willkommen beim sogenannten "Gutenberg Editor"
-        li Geb den Titel des Werkes ein
-        li klicke auf das Plus-symbol um einen "neuen Block zu erstellen" und im Feld "image" eingeben
-        em dieser "Block" kann alles mögliche beinhalten (Text, Audio, Bilder, Listen, Gallerien usw.)
+      ol#one
         .tip
           p Googlesuche nach "Gutenberg Editor Blocks" für mehr Infos
-        li Icon <span class="accent">Image</span> anklicken
-        li Schaltfläche <span class="accent">Upload</span> oder <span class="accent">Media Library</span> auswählen
-        em falls das Bild noch nicht geuploadet wurde "Upload", falls du das schonmal getan hast befindet es sich bereits in deiner "Media Library"
-        li gewünschtes Bild anwählen und Schaltfläche (rechts unten) <span class="accent">Select</span> klicken
-        em unter dem Bild erscheint nun "Write caption" (falls nicht, Bild anklicken)
-        li <em>"write caption"</em> anklicken und deine Bildbeschreibung eingeben
-        li Schaltfläche <span class="accent">Publish</span> klicken
-      video(controls src="https://res.cloudinary.com/seba123/video/upload/v1596979025/QbO972ZxQD_o8btu4.mp4")
-      h2 1.2 Das Werk dem Werke-Menü zuordnen:
-      ol
-        li Aufs Dashboard zurück, zb. durch klick aufs Wordpresslogo links oben
-        li Schaltfläche <span class="accent">Appereance</span> NICHT klicken, sondern hovern und aufs Untermenü <span class="accent">Menus</span> klicken
-        li in der linken Spalte <span class="accent">Werke</span> auswählen - Dropdown Menü öffnet sich
-        li Checkbox für gewünschten Post klicken und auf auf <span class="accent">Add to Menu</span> klicken
-        li nun erscheint dein "Werk" in der rechten Spalte, ziehe den Block an die gewünschte Stelle unter <span class="accent">Werke</span>, leicht eingerückt (wie die anderen Werke)
-        em achte darauf, dass der Einzug gleich ist wie bei den Anderen, ansonsten hast du versagt - sowohl physisch als auch psychisch
-        .tip
-          p du kannst die Anordnung, an welcher Stelle die Werke nacher im Menü erscheinen durch drag&drop verändern, einfach die Blöcke vertikal rumschieben
-        li Schaltfläche <span class="accent">Save Menu</span> klicken
-        li DONE!
-      video(controls src="https://res.cloudinary.com/seba123/video/upload/v1596979023/iLQ1B4bKNP_xkyx9e.mp4")
-      h2 2.1 Ein neues Event erstellen (Seite "Jetzt")
-      ol#events
-        li Klicke Schaltfläche <span class="accent">Events</span>
-        li Klicke Schaltfläche <span class="accent">Add New</span>
-        li Geb den Titel des Werkes ein
-        li für die Mitwirkenden klicke das Plussymbol, suche "list" und geb die Namen ein
-        li klicke in den Block darunter und "start writing", hier sind deiner Fantasie keine Grenzen gesetzt
-        li Geb das Datum, die Location und die Adresse ein (die Felder stehen unten) unter "More Fields"
-        li Schaltfläche <span class="accent">Publish</span> klicken
-        li DONE!
-      h2 3.1 Vitaeinträge erstellen
-      ol#vita
-        li Ziemlich das Gleiche wie bei Events
-        li für die Bilder kannst du dich auch entscheiden anstatt "image", "gallery" zu verwenden
-        li Plussymbol klicken, "gallery" suchen
-        li Bilder aus deiner "Media Library" auswählen (mehrere anklicken ist möglich)
-        li in der rechten Spalte kannst du unter "columns" wählen, wie viele Bilder pro Reihe erscheinen sollen
-        li den switch mit "Crop images" musst du testen, manchmal gut, manchmal kagge, weil wichtige Bildteile eventuell gecropt werden
-        li Schaltfläche <span class="accent">Publish</span> klicken
-        li DONE!
-        .tip
-          p Probier einfach mal mit den verschiedenen "Gutenberg Blöcken" rum, was da so abgeht, kannst dir unter <span class="accent">Preview</span> das jederzeit anschauen, ist allerdings nicht immer 100% das, was du nacher bekommst
-        figcaption Vitaeintrag erstellen (gilt auch für Events)
-      video(controls src="https://res.cloudinary.com/seba123/video/upload/v1596991895/YhQPGIdEXr_op73uc.mp4")
-      h2 4.1 Sonstiges, Extras, Hämorrhoiden
-      ol#extras
-        li Einträge löschen (im Fall von Werke auch den Eintrag im Menü löschen!)
-        figcaption Einträge löschen am Beispiel von Werke
-      video(controls src="https://res.cloudinary.com/seba123/video/upload/v1596991896/ZJgOg4rN0E_bgmjfh.mp4")
-      ol
-        li Metadescription einer Seite hinzufügen
-        figcaption mit Yoast der Hauptseite eine Metadescritption hinzufügen
-      video(controls src="https://res.cloudinary.com/seba123/video/upload/v1597082599/7b2CHvvxy1_gdvthv.mp4")
-      ol
-        .tip
-          p das funktioniert mit jeder Seite, die Zeichenlänge sollte sich so auf 150-170 Zeichen beschränken, wird von Yoast aber auch angezeigt
+
+
     footer
       p Made with <img class="wine" src="assets/img/wine.svg"> by <a href="https://schaal.design">schaal.design</a>
         
